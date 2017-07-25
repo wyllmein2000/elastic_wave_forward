@@ -1,0 +1,13 @@
+# Author: Yan Wu
+# Date:   Jul 25, 2017
+
+
+This project is for numerical simulation of acoustic and elastic waves. 
+It is used in academic research in Geophysical field. 
+
+
+The codes contains two parts. One is for acoustic wave simulation, and 
+the other one is for elastic wave simulation. Both are 2d version 
+currently.  It is realized by finite difference method and The difference 
+stencil is two-order in time and high order in space. The boundary is 
+well-known Perfect Match layer (PML) boundary.

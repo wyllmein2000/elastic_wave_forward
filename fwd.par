@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# (iway = 0, normal; =1, remove direct waves)
+FORWARD,0
+
+HEADFILE,header.txt
+
+# (iplw, ishot1, ishot2)
+# (iplw = 0, shot gather; =1, plane-wave
+SHOTS,0,1,1
+
+TRACE,trace.bin
+
+VPFILE,vp.dat
+VSFILE,vs.dat
+RHOFILE,rho.dat
+
+# model parameters
+VELX,0.0,25.0,1026
+VELZ,0.0,25.0,200
+TIME,0.002,3000
+
+# (fp,td,iwvl,isrc)
+# (  fp --- dominant frequency (Hz)
+# (  td --- peak delay (sec)
+# (iwvl --- wavelet type
+# (isrc --- source type
+WAVELET,10.0,0.1,1,0
+
+RANGE,0,121,0,1000
+DIMENSION,2
+nthread,16
+
+# (nxpml, nzpml, ifs)
+PML,20,20,1
+
+# (nxor, ntor)
+ORDER,6,2
